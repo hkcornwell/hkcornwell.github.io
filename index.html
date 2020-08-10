@@ -75,14 +75,23 @@
     <div class="container">
       <h1 class="title">Projects</h1>
       <hr />
-      <div class="tile is-ancestor">
-        <div class="tile is-parent is-vetical">
+      <div class = "tile is-ancestor">
+        <div class="tile is-parent">
           <article class="tile is-child box">
-            <p class="title">Journal Trends</p>
-            <p class="subtitle">Currently underway...</p>
+            <p class="title">Scientific Journal Trends</p>
+            <figure class="image is-3by3">
+              <img class="modal-trigger" data-target="project-5-modal" src="img/lightbuld.jpg">
+            </figure>
+          </article>
+          <article class="tile is-child box">
+            <p class="title">sEMG Signal Classification</p>
+            <figure class="image is-3by3">
+              <img class="modal-trigger" data-target="project-5-modal" src="img/grasp.png">
+            </figure>
           </article>
         </div>
       </div>
+
       <div class="tile is-ancestor">
         <div class="tile is-parent is-vetical">
           <article class="tile is-child box">
@@ -454,7 +463,7 @@
     <div class="modal-background"></div>
     <div class="modal-card">
       <header class="modal-card-head">
-        <p class="modal-card-title">Project title</p>
+        <p class="modal-card-title">Red Bull Flugtag</p>
         <button class="delete" aria-label="close"></button>
       </header>
       <section class="modal-card-body">
@@ -489,6 +498,52 @@
       </footer>
     </div>
   </div>
+
+  <div id="project-5-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">sEMG Signal Classification</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div id="project-5-modal-carousel" class="carousel5">
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel5/1.jpg">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel5/2.jpg">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel5/3.png">
+          </figure>
+        </div>
+
+        <div class="content">
+          <p>sEMG signal data is used to predict the type of grabbing motion of a subject. This study evaluates many state-of-the-art machine learning algorithms
+            as well as data processsing and transformation techniques. An maximum accuracy of around 75% was achieved, which is high considering the number of
+            classification possibilites.<br>
+            <a href="https://archive.ics.uci.edu/ml/datasets/sEMG%20for%20Basic%20Hand%20movements">Data</a> &emsp;|&emsp;
+            <a href="docs/Final_Report_sEMG.pdf">Report</a> &emsp;|&emsp;<a href="https://github.com/hkcornwell/sEMG-signal-classification">Repository</a><br><br>
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">SVM</span>
+            <span class="tag">K-Means</span>
+            <span class="tag">Gaussian-Mixture</span>
+            <span class="tag">Naive-Bayes</span>
+            <span class="tag">Neural Network</span>
+            <span class="tag">Logistic Regression</span>
+          </div>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+      </footer>
+    </div>
+  </div>
+
   <script src="js/bundle.js"></script>
 </body>
 
